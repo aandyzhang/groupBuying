@@ -1,0 +1,60 @@
+{
+	"errorcode": 0,
+	"number": 1,
+	"status": 1,
+	"errormsg": "请求失败",
+	"info": {
+		"title": "开团成功",
+		"titleImage": "images/title.png",
+		"missCount": "2",
+		"goods": {
+			"goodsImage": "images/goods.png",
+			"goodsName": "2014秋季装青年男士夹克外套外套潮流外套夹克外套外套潮流外套夹克外套外套潮流外套夹克外套外套潮流外套夹克外套外套潮流外套",
+			"goodsNumber": 10,
+			"goodsPrice": 1002,
+		},
+		"countDown": 1234536623681,
+		"host": {
+			"hostName": "张三",
+			"pushTime": "01-16 15:23",
+			"avatar": "images/goods.png",
+		},
+		"guests": [{
+				"guestName": "李四",
+				"joinTime": "02-12 22:00",
+				"avatar": "images/goods.png",
+			},
+			{
+				"guestName": "李四",
+				"joinTime": "02-12 22:00",
+				"avatar": "images/goods.png",
+			},
+			{
+				"guestName": "李四",
+				"joinTime": "02-12 22:00",
+				"avatar": "images/goods.png",
+			},
+			{
+				"guestName": "李四",
+				"joinTime": "02-12 22:00",
+				"avatar": "images/goods.png",
+			},
+			{
+				"guestName": "李四",
+				"joinTime": "02-12 22:00",
+				"avatar": "images/goods.png",
+			},
+			{
+				"guestName": "李四",
+				"joinTime": "02-12 22:00",
+				"avatar": "images/goods.png",
+			}
+		],
+		"step": 2,
+		"stores": {
+			"storeLogo": "images/store-logo.png",
+			"storeName": "圣罗兰官方旗舰店",
+		},
+		"btnName": "邀请好友来参团"
+	},
+}

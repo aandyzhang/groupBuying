@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+
+/*加载动画*/
+
+.loading{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    z-index: 100;
+}
+.pic{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 60px;
+    width: 60px;
+    margin: auto;
+}
+.pic i{
+    height: 60px;
+    width: 8px;
+    margin: 0px 2px;
+    background: #FF2F44;
+    display: block;
+    float: left;
+    -webkit-transform: scaleY(0.4);
+    -ms-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    -webkit-animation: move 1s infinite ;
+    animation: move 1s infinite ;
+}
+@-webkit-keyframes move{
+    20%,40% 100%{-webkit-transform: scaleY(0.4);transform: scaleY(0.4);}
+    100%{-webkit-transform: scaleY(1);transform: scaleY(1);}
+}
+@keyframes move{
+    0%,40%,100%{-webkit-transform: scaleY(0.4);transform: scaleY(0.4);}
+    20%{-webkit-transform: scaleY(1);transform: scaleY(1);}
+}
+.pic i:nth-child(2){
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+}
+.pic i:nth-child(3){
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+}
+.pic i:nth-child(4){
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+}
+.pic i:nth-child(5){
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+}
