@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge chrome=1">
-  <meta name="format-detection" content="telephone=no,email=no,adress=no">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-touch-fullscreen"="yes">
-  <meta name="renderer" content="webkit">
-  <title>拼团活动</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/loading.css">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge chrome=1">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" ="yes">
+    <meta name="renderer" content="webkit">
+    <title>拼团活动</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reload.css">
 </head>
-
 <body>
-  <!-- 缓冲动画 -->
-  <div class="loading" id="loading">
+<!-- 缓冲动画 -->
+  <div class="loading" id="loading" style="display: block;">
     <div class="pic">
       <i></i>
       <i></i>
@@ -27,141 +26,101 @@
     </div>
   </div>
 
-  <div class="container" id="content">
+    <div class="container" id="content">
     <!-- 头部 包括商品的展示-->
-
-    <head class="sell-head">
-      <section class="sell-top">
-        <div class="sell-tit clear">
-          <img src="" class="fl" alt="开团成功" width="90" height="80">
-          <h2 class="sell-status fl"></h2>
-        </div>
-        <p class="sell-condition clear"></p>
-      </section>
-      <section class="goods clear">
-        <div class="goods-logo fl">
-          <img src="" alt="商品图片" height="90" width="90">
-        </div>
-        <div class="goods-info fl">
-          <h1 class="goods-title"></h1>
-          <div class="goods-number">
-            <i></i>人团</div>
-          <span class="goods-price">拼团价:
-            <i></i>元</span>
-        </div>
-        <div class="my-order">
-          <button class="btn">我的订单</button>
-        </div>
-      </section>
-    </head>
-    <!-- 中间团购倒计时-->
-    <main class="sell-activity">
-      <section class="sell-info">
+      <head class="sell-head">
+        <section class="sell-top">
+          <div class="sell-tit clear">
+            <img src="" class="fl" alt="开团成功" width="90" height="80">
+            <h2 class="sell-status fl">!</h2>
+          </div>
+          <p class="sell-condition clear"></p>
+        </section >
+        <section class="goods clear">
+          <div class="goods-logo fl">
+            <img src="" alt="商品图片" height="90" width="90">
+          </div>
+          <div class="goods-info fl">
+            <h1 class="goods-title"></h1>
+            <div class="goods-number"><i></i>人团</div>
+            <span class="goods-price">拼团价:<i></i>元</span>
+          </div>
+          <div class="my-order">
+            <button class="btn">我的订单</button>
+          </div>
+        </section>
+      </head>
+      <!-- 中间团购倒计时-->
+      <main class="sell-activity">
+        <section class="sell-info">
         <!-- 倒计时 -->
-        <div class="time-down">
-          <div class="time-info">
-            <div class="time-icon">
-              本团将于
-              <span class="hour">00</span>
-              <i>:</i>
-              <span class="minute">00</span>
-              <i>:</i>
-              <span class="second">00</span>后结束,还差
-              <strong>0</strong>人
+          <div class="time-down">
+            <div class="time-info">
+              <div class="time-icon">
+                本团将于<span class="hour">00</span><i>:</i><span class="minute">00</span><i>:</i><span class="second">00</span>后结束,还差<strong>0</strong>人
+              </div>
             </div>
           </div>
-        </div>
-        <!-- 团购人员 -->
-        <div class="sell-people">
-          <!-- 发起人 -->
-          <div class="host fl">
-            <div class="line">
-              <!-- 线下的圆 -->
-              <span class="out-circle">
-                <span class="inner-circle"></span>
-              </span>
-            </div>
-            <div class="host-info">
-              <div class="host-info-right fr">
-                <div class="img-shadow">开团</div>
-                <img src="" alt="头像" height="40" width="40">
-              </div>
-              <div class="host-info-left fr">
-                <div class="username" id="_username"></div>
-                <div class="push-time" id="_push-time"></div>
-              </div>
-              <!-- 三角形 -->
-              <div class="triangle"></div>
+          <!-- 团购人员 -->
+          <div class="sell-people">
+            <div class="sell-wrap" id="sell">
             </div>
           </div>
-          <!-- 加入的人右边 -->
-
-
+        </section>
+      </main>
+           <!-- 活动说明 -->
+      <section class="sell-descript">
+        <div class="descript-title">
+          <div class="instruction fl"><span></span>活动说明</div>
+          <a href="#" class="more fr" alt="查看更多">查看更多<i>&gt;</i></a>
+        </div>
+        <div class="descript-content">
+          <ul>
+            <li>
+                <a href="#" class="one">
+                  <!-- <img src="images/choose.png" height="38" width="38"> -->
+                  选择商品支付开团
+                </a>
+            </li>
+            <li>
+                <a href="#" class="two">
+                  <!-- <img src="images/active-friend.png" height="38" width="38"> -->
+                  邀请好友支付参团
+                </a>
+            </li>
+             <li>
+                <a href="#" class="three">
+                  <!-- <img src="images/friend.png" height="38" width="38"> -->
+                  达到人数参团成功
+                </a>
+            </li>
+          </ul>
+        </div>
+        <div class="descript-info">
+            支付开团并邀请好友参团，组团成功后开团人将获得返佣;如组团失败,则系统自动将款项原路退还。
         </div>
       </section>
-    </main>
-    <!-- 活动说明 -->
-    <section class="sell-descript">
-      <div class="descript-title">
-        <div class="instruction fl">
-          <span></span>活动说明</div>
-        <a href="#" class="more fr" alt="查看更多">查看更多
-          <i>&gt;</i>
-        </a>
-      </div>
-      <div class="descript-content">
-        <ul>
-          <li class="step-one">
-            <img src="images/choose.png" height="38" width="38">
-            <span>选择商品支付开团</span>
-          </li>
-          <li>
-            >
-          </li>
-          <li class="step-two">
-            <img src="images/active-friend.png" height="38" width="38">
-            <span class="sort-two-active">邀请好友支付参团</span>
-          </li>
-          <li>
-            >
-          </li>
-          <li class="step-three">
-            <img src="images/friend.png" height="38" width="38">
-            <span class="sort-default">达到人数参团成功</span>
-          </li>
-        </ul>
-      </div>
-      <div class="descript-info">
-        支付开团并邀请好友参团，组团成功后开团人将获得返佣;如组团失败,则系统自动将款项原路退还。
-      </div>
-    </section>
 
-    <!-- 旗舰店信息 -->
-    <footer class="sell-store">
-      <section class="store-info">
-        <div class="store-info-left fl ">
-          <img src="" alt="门店信息" class="fl" height="29" width="29">
-          <h1 class="fl store-name"></h1>
-        </div>
-        <div class="store-info-right fr">微信认证</div>
+      <!-- 旗舰店信息 -->
+      <footer class="sell-store">
+        <section class="store-info">
+          <div class="store-info-left fl ">
+             <img src="images/store-logo.png" alt="门店信息" class="fl" height="29" width="29">
+             <h1 class="fl store-name"></h1>
+          </div>
+          <div class="store-info-right fr">微信认证</div>
 
-        <div class="store-choose">
-          <button class="btn-store outline fl">线下门店</button>
-          <button class="btn-store goto fr">进入店铺</button>
-        </div>
-      </section>
-      <section class="join">
-        <button class="invite"></button>
+          <div class="store-choose">
+              <button class="btn-store outline fl">线下门店</button>
+              <button class="btn-store goto fr">进入店铺</button>
+          </div>
+        </section>
+        <section class="join">
+          <button class="invite"></button>
         <section>
-    </footer>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-  </div>
-  <script src="js/style.js"></script>
+      </footer>
+      <!-- <br/><br/><br/><br/><br/><br/> -->
+    </div>
+    <script src="js/style.js"></script>
 </body>
-
 </html>

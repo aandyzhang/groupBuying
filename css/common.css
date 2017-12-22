@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* 向左浮动 */
+.fl{
+    float: left;
+}
+
+/* 向右浮动 */
+
+.fr{
+    float: right;
+}
+
+/* 清浮动 */
+.clearfix:after {
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	content:" ";
+	clear:both;
+	height:0;
+}
+/* 一像素线 */
+
+.line{
+    height: 1px;
+    width: 100%;
+    transform: scaleY(0.5);
+    -webkit-transform: scaleY(0.5);
+    background: #888;
+}
+
+/* 一像素底边线 */
+
+.bottomLine{
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleY(0.5);
+    -webkit-transform: scaleY(0.5);
+    background: #888;
+}
+
